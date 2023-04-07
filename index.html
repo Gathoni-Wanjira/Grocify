@@ -19,7 +19,7 @@
 
   <body>
     <!-- BACKGROUND DIV -->
-    <div class = "container min-h-screen min-w-full bg-[url('/Images/Image.png')] bg-cover bg-center px-10">
+    <div class = "container relative min-h-screen min-w-full bg-[url('/Images/Image.png')] bg-cover bg-center px-10">
         <!-- NAV BAR DIV-->
       <nav class="flex items-center ">
             <img src="Images/logo.png " class="w-15 cursor-pointer">
@@ -60,7 +60,9 @@
 
 
         </div>
-        <img src="Images/grocery-image.png" class="flex-display h-72 w-72">
+        <div class="w-full ">
+        <img src="Images/grocery-image.png" class="xl:w-1/2 absolute pt-5 bottom-0 right-20 h-full">
+      </div>
     </div>
     
   </body>
