@@ -9,19 +9,26 @@
   </head>
 
 <!-- Always remember to link the tailwind CSS CDN to the HTML header while using Tailwind-->
+<!-- Always remember to create a tailwind Config.js file to assist while customizing styles -->
+<!-- Remember that the utility classes properties are space and case sensitive -->
+<!-- The first div is using the tailwind utility classes to style the background of the full screen -->
+<!-- The nav class is used to style the logos and the menu 
+     Specific Menu styling inside the links is used to style the text menu -->
+
 
 
   <body>
-    <div>
-        <nav>
-            <img src="Images/logo.png">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Contact</a></li>
+    <div class = "container min-h-screen min-w-full bg-[url('/Images/Image.png')] bg-cover bg-center">
+        <nav class="flex items-center ">
+            <img src="Images/logo.png " class="w-20 cursor-pointer">
+            <!-- Flex-1 is flex-grow and flex-shrink in vanilla css -->
+            <ul class="flex-1 text-center">
+                <li class="inline-block list-none px-5 "><a href="#" class="text-white px-2 ">Home</a></li>
+                <li class="inline-block list-none px-5 "><a href="#"  class="text-white px-2 ">About</a></li>
+                <li class="inline-block list-none px-5 "><a href="#"  class="text-white px-2 ">Features</a></li>
+                <li class="inline-block list-none px-5 "><a href="#"  class="text-white px-2 ">Contact</a></li>
             </ul>
-            <img src="Images/cart.png" >
+            <img src="Images/cart.png"  class="w-10 cursor-pointer">
         </nav>
     </div>
     
